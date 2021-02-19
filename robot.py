@@ -1,9 +1,13 @@
-#initial commit
+#task is to write a CLI application to parse commands and display the result.
+
+
+
+
 data=[]
 data = input("Enter Commands for the Robot [comma separated]");
 command_list = data.split(",")
 
-print(command_list)
+#print(command_list)
 
 #now declaring the DIRECTION array
 #we have also given the vector for the move
@@ -23,3 +27,9 @@ for command in command_list:
     value=parts[1]
    
     current_pos += direction[move]*int(value)
+
+#Getting the  distance     
+#Also checking wheather the value has negative magnitude 
+# using absolute function and round function 
+
+print('Distance traveled by the robot:', round(abs(current_pos)))
