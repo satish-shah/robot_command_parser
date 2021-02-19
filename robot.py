@@ -1,6 +1,9 @@
 #task is to write a CLI application to parse commands and display the result.
 
-
+#since space between the commands is not requird eg 'L 1'
+#implemented this function to avoid the space provided by user eg 'L1'
+def split(word):
+    return list(word)
 
 
 data=[]
