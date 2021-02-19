@@ -47,7 +47,7 @@ current_pos=0
 
 for item in items:
     print(item, " item")
-    move = item[0].lower()
+    move = item[0].upper()
     value = item[1]
     current_pos += direction[move]*int(value)
 
